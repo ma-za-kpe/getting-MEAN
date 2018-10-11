@@ -87,6 +87,22 @@ color: #1abc9c !important;;
   text-align: left;
   margin:10px;
 }
+.rate{
+  margin: 40px;
+  border: 2px solid blue; 
+}
+.map{
+  margin: 40px;
+  border: 2px solid blue;
+}
+.review{
+  margin: 40px;
+  border: 2px solid blue;
+}
+.revieww{
+  border: 2px solid blue;
+  margin-bottom: 10px;
+}
 .footer{
   position: fixed;
   left: 0;

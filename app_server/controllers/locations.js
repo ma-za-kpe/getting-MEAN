@@ -8,12 +8,16 @@ router.homelist = function(req, res){
 
 /* GET 'Location info' page */
 router.locationInfo = function(req, res){
-    res.render('index', { title: 'Location info' });
+    res.render('location-info', { title: 'Location info' });
 };
 
 /* GET 'Add review' page */
 router.addReview = function(req, res){
     res.render('index', { title: 'Add review' });
 };
+
+router.addReview = function(req, res){
+    res.render('location-review-form', { title: 'Add review' });
+    };
 
 module.exports = router;
