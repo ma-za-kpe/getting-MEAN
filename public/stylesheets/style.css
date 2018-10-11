@@ -29,3 +29,75 @@ a {
 .active>a {
 color: #1abc9c !important;;
 }
+.list{
+  background-color:lime;
+}
+.side{
+  background-color:beige;
+}
+
+#name {
+  margin: 20px;
+  border: 2px solid black;
+  width:100%;
+  text-align:center;
+}
+
+#name1 {
+  margin: 20px;
+  border: 2px solid black;
+  width:100%;
+  text-align:center;
+}
+
+#left {
+  float:left;
+  width:100px;
+  height: 20px;
+  background: #ff0000;
+}
+
+#center {
+  display: inline-block;
+  margin:0 auto;
+  width:100px;
+  height: 20px;
+  background: beige;
+}
+
+#right {
+  margin-left: 280px;
+  float:right;
+  width:100px;
+  height: 20px;
+}
+#t{
+   margin-left: 0px;
+  float:right;
+  width:100px;
+  height: 20px;
+  background: white;
+
+}
+
+.checked {
+  color: orange;
+}
+.location{
+  text-align: left;
+  margin:10px;
+}
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:gray;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  font-style: italic;
+}
+.footer p{
+  margin: 10px;
+}
