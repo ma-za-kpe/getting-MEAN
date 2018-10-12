@@ -30,13 +30,22 @@ router.homelist = function(req, res){
             rating: 3,
             facilities: ['Hot drinks', 'Food', 'Premium wifi'],
             distance: '100m'
-        }]
+        }],
+        about:{
+            about:"this website helps you fine MAKU lead Looking for wifi and a seat? Loc8r helps you find places to workwhen out and about. Perhaps with coffee, cake or a pint? Let Loc8r helpyou find the place you're looking for."
+        }
     });
 };
 
 /* GET 'Location info' page */
 router.locationInfo = function(req, res){
-    res.render('location-info', { title: 'Location info' });
+    res.render('location-info', { 
+        title: 'Starcups',
+        pageHeader: {title: 'Starcups'},
+        sidebar: {
+        context: 'is on Loc8r because it has accessible wifi and space to sit down with your laptop and get some work done.callToActiove been and you like it - or if you don\'t -please leave a review to help other people just like you.'
+        } 
+    });
 };
 
 /* GET 'Add review' page */
