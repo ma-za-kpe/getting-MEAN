@@ -90,7 +90,9 @@ color: #1abc9c !important;;
 }
 .rate{
   margin: 40px;
-  border: 2px solid blue; 
+  border: 2px solid blue;
+  width: 100px;
+ 
 }
 .map{
   margin: 40px;

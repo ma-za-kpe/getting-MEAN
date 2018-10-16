@@ -43,8 +43,29 @@ router.locationInfo = function(req, res){
         title: 'Starcups',
         pageHeader: {title: 'Starcups'},
         sidebar: {
+        title: 'Starcups',
         context: 'is on Loc8r because it has accessible wifi and space to sit down with your laptop and get some work done.callToActiove been and you like it - or if you don\'t -please leave a review to help other people just like you.'
-        } 
+        },
+        location: {
+            name: 'Starcups',
+            address: '125 High Street, Reading, RG6 1PS',
+            rating: 3,
+            facilities: ['Hot drinks', 'Food', 'Premium wifi'],
+            openingTimes: [{
+                days: 'Monday - Friday',
+                opening: '7:00am',
+                closing: '7:00pm',
+                closed: false
+                },{
+                days: 'Saturday',
+                opening: '8:00am',
+                closing: '5:00pm',
+                closed: false
+                },{
+                days: 'Sunday',
+                closed: true
+                }]
+        }
     });
 };
 

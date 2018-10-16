@@ -28,7 +28,7 @@
       <!--heading-->
       <div class="row">
         <div class="col-lg-6">
-          <h1>OUTBOX</h1>
+          <h1><%= pageHeader.title %></h1>
         </div>
       </div>
       <!--heading-->
@@ -52,16 +52,28 @@
                         <span class="fa fa-star"></span>
                     </div>
                     <div class="spotlocation">
-                        <p>WANDEGEYA</p>
+                        <p><%= location.address %></p>
                     </div>
-                    <div class="facilities">
+                    <% for (var i = 2; i < location.facilities.length; i++) {%> 
+                      <div class="facilities">
                         <h4>FACILITIES</h4>
                         <ul>
-                            <li>tea</li>
-                            <li>tea</li>
-                            <li>wifi</li>
+                            <li><%= location.facilities %></li>
+                            <li><%= location.facilities %></li>
+                            <li><%= location.facilities %></li>
                         </ul>
                     </div>
+                    <%}%>
+                    <% for (var i = 2; i < location.openingTimes.length; i++) {%> 
+                    <div class="Hours">
+                      <h4>Opening Hours</h4>
+                      <ul>
+                        <li><%= location.openingTimes[0].days %> : <%= location.openingTimes[0].opening %> - <%= location.openingTimes[0].closing %></li>
+                        <li><%= location.openingTimes[1].days %> : <%= location.openingTimes[1].opening %> - <%= location.openingTimes[1].closing %></li>  
+                        <li><%= location.openingTimes[2].days %> : </li> 
+                      </ul>
+                  </div>
+                  <%}%> 
                 </div>
                 <div class="col-xs-12 col-sm-4 map">
 
@@ -70,14 +82,9 @@
 
             </div>
             <div class="col-xs-12 col-sm-4 side">
-                <h2>OUTBOX HUB.</h2>
+                <h2><%= sidebar.title %></h2>
               <p>
-                    lacinia pretium. Aenean fermentum risus id tortor. Aliquam erat volutpat. 
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur 
-                    ridiculus mus. Donec vitae arcu. Maecenas lorem. Fusce suscipit libero eget
-                     elit. Vivamus luctus egestas leo. Vivamus ac leo pretium faucibus. Maecenas
-                      aliquet accumsan leo.
-                    Vivamus ac leo pretium faucibus. Etiam commodo dui eget wisi.
+                <%= sidebar.context %> 
               </p>
             </div>
         </div>
