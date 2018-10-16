@@ -77,8 +77,6 @@ router.addReview = function(req, res){
         });
 };
 
-router.addReview = function(req, res){
-    res.render('generic-about-text', { title: 'Add review' });
-    };
+
 
 module.exports = router;
