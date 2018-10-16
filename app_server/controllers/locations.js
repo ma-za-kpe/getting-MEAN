@@ -71,11 +71,14 @@ router.locationInfo = function(req, res){
 
 /* GET 'Add review' page */
 router.addReview = function(req, res){
-    res.render('index', { title: 'Add review' });
+    res.render('location-review-form', {
+        title: 'Review Outbox on Loc8r',
+        pageHeader: { title: 'Review Outbox' } 
+        });
 };
 
 router.addReview = function(req, res){
-    res.render('location-review-form', { title: 'Add review' });
+    res.render('generic-about-text', { title: 'Add review' });
     };
 
 module.exports = router;
